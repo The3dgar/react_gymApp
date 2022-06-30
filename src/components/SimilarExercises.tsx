@@ -26,7 +26,9 @@ export const SimilarExercises = ({
         Exercises that target the same muscle group
       </Typography>
 
-      <Stack direction={'row'} sx={{ p: '2', position: 'relative', mb:'40px', border: "2px solid red" }}>
+      <Stack
+        direction={'row'}
+        sx={{ p: '2', position: 'relative', mb: '40px' }}>
         {targetMuscleExercises.length && (
           <HorizontalScrollBar data={targetMuscleExercises} />
         )}
